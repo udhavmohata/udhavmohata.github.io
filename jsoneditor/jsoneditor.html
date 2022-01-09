@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">    
+  </head>
+  <style type="text/css">
+    .scrollable {
+      height: 100px;
+      overflow-y: scroll;
+    }
+    </style>
+  <body>
+    <div class="jumbotron text-center" style="background-color: rgb(204, 198, 190); height: 200px;margin-bottom: 1px;">
+        <h1>Mapping JSON</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="jumbotron col-sm-6" style="margin-bottom:1px;">
+              <h3>JSON File</h3>
+              <div class="form-group">
+                <label for="comment">Paste JSON Here</label>
+                <textarea class="form-control" rows="10" id="myFile"></textarea>
+              </div>
+              <p id="JSON_error" style="color: red;font-size: 16px;"></p>
+              <label for="comment">Note: Replace null with double quotes (" ").</label>
+              <br><button type="button" class="btn btn-primary" id="submit">Submit</button>    
+          </div>
+          <div class="jumbotron col-sm-6 scrollable" style="background-color: rgb(118, 177, 233);height: 470px;margin-bottom:1px;">
+            <h3 style="color: rgb(46, 44, 44);">Input Fields</h3>
+            <div class="form-group">
+              <label for="tenantId">Tenant Id<input type="text" class="form-control" id="tenantId"></label>
+              <label for="entity">Entity<input type="text" class="form-control" id="entity"></label>
+              <label for="comment">*JSON File Name will be "tenantId_entity.json/.ftl".</label>
+              <div id="containerDemo"></div>
+            </div>
+            <label style="font-size: 18px;">Generate</label><br>
+            <button type="button" class="btn btn-success" id="jsonbtn">JSON</button>
+            <button type="button" class="btn btn-success" id="ftlbtn">FTL</button>
+          </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="mappingBootstrap.js"></script>
+  </body>
+</html>
