@@ -23,7 +23,6 @@ body {
   padding: 0;
   margin: 0;
   align-items: center;
-  border: 2px solid black;
 }
 .bg {
   background-image: url(./images/background.png);
