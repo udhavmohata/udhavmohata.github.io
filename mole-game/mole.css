@@ -15,11 +15,15 @@ body {
   width: 100vw;
 }
 
-.game-name, .score {
+.game-name{
   font-size: 200px;
   font-family: 'Luckiest Guy', cursive;
   font-style: bold;
   color: #D17732;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  border: 2px solid black;
 }
 .bg {
   background-image: url(./images/background.png);
@@ -88,5 +92,9 @@ body {
 }
 
 .score {
+  font-size: 200px;
+  font-family: 'Luckiest Guy', cursive;
+  font-style: bold;
+  color: #D17732;
   margin-top: 20px;
 }
