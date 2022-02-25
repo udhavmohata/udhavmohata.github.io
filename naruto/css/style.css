@@ -1,0 +1,296 @@
+/*
+-- Typography System
+  Font size (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+  Font weight:
+  Default: 400
+  Medium: 500
+  Semi-bold: 600
+  Bold: 700
+  
+  Line height:
+  Default: 1
+  small 1.05
+  medium: 1.2
+  Paragraph default: 1.6
+  Large 1.8
+
+  Letter spacing
+  -0.5px
+  0.75px
+
+-- Colors:
+Primary: #e67e22
+Tints: 
+#fdf2e9
+#fae5d3
+#eb984e
+Shades:
+#cf711f
+#45260a
+Accents:
+Greys:
+#6f6f6f (lighest grey allowed on #fdf2e9)
+#555
+#333
+
+-- Shadows
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+-- Border-radius
+Default: 9px,
+11px
+-- White space
+
+SPACING SYSTEM (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #333;
+}
+
+/**************************/
+/* REUSABLE SECTION */
+/**************************/
+.container {
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.margin-bottom-small {
+  margin-bottom: 2rem;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.margin-bottom-big {
+  margin-bottom: 6rem;
+}
+
+.heading-primary {
+  font-size: 7.4rem;
+  font-weight: 700;
+}
+
+.heading-secondary {
+  font-size: 6.2rem;
+  font-weight: 600;
+}
+
+.heading-tertiary {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+/**************************/
+/* Header SECTION */
+/**************************/
+
+.header {
+  background-color: #ffec99;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.logo {
+  height: 9.8rem;
+}
+
+.nav-list {
+  list-style: none;
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding-bottom: 2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 4.6rem;
+}
+
+.nav-list-item {
+  text-decoration: none;
+  color: #333;
+}
+
+/**************************/
+/* HERO SECTION */
+/**************************/
+
+.section-hero {
+  margin-bottom: 6.4rem;
+}
+
+.hero {
+  background-color: #ffec99;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 6.4rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.hero-description {
+  font-size: 3.6rem;
+}
+
+.hero-img {
+  max-width: 80%;
+}
+
+/**************************/
+/* ABOUT SECTION */
+/**************************/
+
+.section-about {
+  margin-bottom: 6.4rem;
+}
+
+.about-description {
+  font-size: 1.6rem;
+  /* margin-bottom: 2rem; */
+}
+
+.description {
+  font-size: 1.6rem;
+  margin-bottom: 2.5rem;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 700;
+  color: #ddd;
+}
+
+.part {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  place-items: center;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1.6rem 3.2rem;
+  border-radius: 40px;
+  color: #fff;
+  background-color: #eb8e47;
+}
+
+.part-description {
+  margin-bottom: 2rem;
+}
+.part-logo {
+  height: 9.8rem;
+}
+
+/**************************/
+/* CHARACTER SECTION */
+/**************************/
+
+.section-characters {
+  margin-bottom: 6.4rem;
+}
+
+.all-characters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3rem;
+}
+
+.character {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.4s;
+  color: #555;
+  background-color: #f7efcc;
+}
+
+.character:hover {
+  /* box-shadow: 0 3.3rem 6.4rem rgba(0, 0, 0, 0.06); */
+  transform: translateY(-1.2rem);
+}
+
+.character-img,
+.ot-character-img {
+  border-radius: 10px;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.ot-character-img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: all 0.4s;
+}
+
+.ot-character-img:hover {
+  transform: scale(1.1);
+}
+
+.character-name,
+.ot-character-name {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.character-description {
+  font-size: 1.6rem;
+  /* text-align: center; */
+}
+
+.section-other-characters {
+  margin-bottom: 6.4rem;
+}
+
+.other-characters {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+
+.ot-character {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f7efcc;
+  color: #555;
+}
+
+.footer {
+  margin-bottom: 3.2rem;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #767676;
+  margin-top: auto;
+}
