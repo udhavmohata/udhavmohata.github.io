@@ -6,3 +6,4 @@
 ## [**Game: Star Mole**](https://udhavmohata.github.io/mole-game/index.html)
 ## [**Dog viewer**](https://udhavmohata.github.io/dog-app/index.html)
 ## [**Omnifood**](https://udhavmohata.github.io/Omnifood/index.html)
+## [**naruto**](https://udhavmohata.github.io/naruto/index.html)
