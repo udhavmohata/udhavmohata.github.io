@@ -85,9 +85,9 @@
 }
 
 @media (max-width: 34em) {
-  .header {
+  /* .header {
     flex-direction: column;
-  }
+  } */
 
   /* .header-nav {
     width: 0;
